@@ -1,3 +1,6 @@
+<!DOCTYPE HTML>
+<html>
+<head>
 <!-- MAIN (Center website) -->
 <div class="main">
 <link rel="stylesheet" type="text/css" href="style.css">
@@ -5,23 +8,48 @@
 <h1>Martin Orava</h1>
 <hr>
 
-<h2>PORTFOLIO</h2>
-<p>Resize the browser window to see the responsive effect.</p>
+<h3>I'm a 5th year M.Sc. in Media Technology & Engineering student at Linköping university and this is my portfolio.</h3>
+<p>Projects are listed in chronological order, most recently finished projects to the left </p>
 
 <!-- Portfolio Gallery Grid -->
 <div class="row">
   <div class="column">
     <div class="content">
-      <img src="yellowropes.jpg" alt="Mountains" style="width:100%">
-      <h3>My Work</h3>
-      <p>Lorem ipsum..</p>
+
+      <!-- Trigger the Modal -->
+      <img class="myImg" id="myImg1" src="default.jpg" alt="Monte-Carlo raytracer" style="width:100%;max-width:300px">
+      <!-- The Modal -->
+      <div id="myModal1" class="modal">
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img1">
+        <!-- Modal Caption (Image Text) -->
+        <div class= "caption" id="caption1"></div>
+        <div class= "description" id="description1"> </div>
+      </div>
+
+      <h3>Monte-Carlo raytracer</h3>
+      <p>On going..</p>
     </div>
   </div>
   <div class="column">
     <div class="content">
-      <img src="yellowropes.jpg" alt="Lights" style="width:100%">
-      <h3>My Work</h3>
-      <p>Lorem ipsum..</p>
+
+    <!-- Trigger the Modal -->
+    <img class="myImg" id="myImg2" src="AI_neural_network.png" alt="Recognize Handwritten Letters Using Neural Network" style="width:100%;max-width:300px">
+    <!-- The Modal -->
+    <div id="myModal2" class="modal">
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img2">
+      <!-- Modal Caption (Image Text) -->
+      <div class= "caption" id="caption2"></div>
+      <div class= "description" id="description2"> </div>
+    </div>
+      <h3>Neural Network</h3>
+      <p>MNIST Database, Javascript, Tensorflow</p>
     </div>
   </div>
   <div class="column">
@@ -47,4 +75,11 @@
 </div>
 
 <!-- END MAIN -->
+
 </div>
+
+</head>
+<body>
+  <script src="index.js"> </script>
+</body>
+</html>
