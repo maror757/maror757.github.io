@@ -6,6 +6,7 @@
 
 createModal("myModal1", "myImg1", "img1", "caption1", "description1", "montecarlo");
 createModal("myModal2", "myImg2", "img2", "caption2", "description2", "neuralnetwork");
+createModal("myModal3", "myImg3", "img3", "caption3", "description3", "mern");
 //insertImage("myImg2", "img02", "caption2", "description2", "neuralnetwork");
 
 function createModal(modalName, imgName, modalImg, capt, descr, projectName)
@@ -43,10 +44,18 @@ modal.addEventListener('click',function(){
 function getDescription(projectName)
 {
   if (projectName === "montecarlo")
-    return "This project is in progress";
+    return "This project was started on a blank file and then developed into an actual raytracer using only C++ code and the GLM library."
+    + " One of the walls as well as one of the spheres uses specular reflections. The floor, "
+    + "ceiling and the remaining walls and objects uses a Lambertian based BRDF. Total amount of triangles in the scene is 28."
+    + " Triangle intersections are calculated using the Möller Trumbore algorithm. The scene is lit up by one lightsource";
 
   else if(projectName === "neuralnetwork")
-    return "In this project me and one other student designed a neural network using tensorflow and Javascript"
-    + " together with p5 to create an interactive AI that first trains on 70000 handwritten digits"
-    + " from the MNIST database and then guesses what the user inputs" ;
+    return "This application is designed using a neural network with Tensorflow.js and Javascript"
+    + " together with p5 to create an interactive AI. It is trained on 70000 handwritten digits"
+    + " from the MNIST database. The user can write a digit on the canvas with the help of the mouse and the application will guess"
+    + " what number is on the screen. The predictions are instantanious,"
+    + " the only thing that takes time is the first time it needs to train. This takes 1-3 minutes based your computer";
+
+  else if(projectName === "mern")
+    return "In this project" ;
 }
