@@ -57,6 +57,12 @@ span.onclick = function() {
 
 modal.addEventListener('click',function(){
   this.style.display="none";
+  var iframes = document.getElementsByTagName("iframe");
+  if (iframes != null) {
+    for (var i = 0; i < iframes.length; i++) {
+        iframes[i].src = iframes[i].src; //causes a reload so it stops playing, music, video, etc.
+    }
+  }
 })
 
 }
@@ -114,7 +120,7 @@ function getDescription(projectName)
       + " The aim was to replicate a real life scenery (Högklint, Gotland - Sweden) by using the tools provided in the software";
     else if(projectName === "dota2")
       return "I created and implemented a courier in the online video game Dota 2. A Courier is a unit"
-      + " inside the game that delivers items to a player. The courier was created in 3D using 3dsMax. Every courier in the game" 
+      + " inside the game that delivers items to a player. The courier was created in 3D using 3dsMax. Every courier in the game"
       + " needs 5 animations, one for ground walking, ground idle, flying, flying idle and dying. These animations were created"
       + " using Maya and the textures for the model was designed in photoshop.";
 
