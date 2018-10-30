@@ -1,9 +1,4 @@
-
-
 // Get the modal
-
-
-
 createModal("myModal1", "myImg1", "img1", "caption1", "description1", "montecarlo");
 createModal("myModal2", "myImg2", "img2", "caption2", "description2", "neuralnetwork");
 createModal("myModal3", "myImg3", "img3", "caption3", "description3", "mern");
@@ -42,11 +37,6 @@ function createModal(modalName, imgName, modalImg, capt, descr, projectName)
     }
   }
 
-
-
-
-
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
@@ -64,9 +54,7 @@ modal.addEventListener('click',function(){
     }
   }
 })
-
 }
-
 
 function getDescription(projectName)
 {
@@ -123,7 +111,4 @@ function getDescription(projectName)
       + " inside the game that delivers items to a player. The courier was created in 3D using 3dsMax. Every courier in the game"
       + " needs 5 animations, one for ground walking, ground idle, flying, flying idle and dying. These animations were created"
       + " using Maya and the textures for the model was designed in photoshop.";
-
-
-
 }
