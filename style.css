@@ -124,6 +124,15 @@ h1 {
     height: 150px;
 }
 
+.myVid{
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 600px;
+  background-color: #DCDCDC; /* Fallback color */
+  padding: 10px 10px;
+}
+
 /* Add Animation - Zoom in the Modal */
 .modal-content,#caption , #description{
     animation-name: zoom;
