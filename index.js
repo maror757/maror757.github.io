@@ -110,9 +110,13 @@ function getDescription(projectName)
       + " which is solely based on different power levels of the engine, no manipulation of the x and y coordinates are involved,"
       + " only real physical mathematical calculations changes the altitude of the helicopter (with some physical forces ignored).";
     else if(projectName === "terragen")
-      return "terragen";
+      return "This project was made in Terragen 4, which is a procedural planet renderer created by Planetside Software."
+      + " The aim was to replicate a real life scenery (Högklint, Gotland - Sweden) by using the tools provided in the software";
     else if(projectName === "dota2")
-      return "dota2";
+      return "I created and implemented a courier in the online video game Dota 2. A Courier is a unit"
+      + " inside the game that delivers items to a player. The courier was created in 3D using 3dsMax. Every courier in the game" 
+      + " needs 5 animations, one for ground walking, ground idle, flying, flying idle and dying. These animations were created"
+      + " using Maya and the textures for the model was designed in photoshop.";
 
 
 
