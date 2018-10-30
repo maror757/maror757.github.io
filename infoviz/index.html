@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Visualizing Southpark Manuscript</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <div id="topbarTitle" class="title-left">Choose characters to display (ctrl + f to search)
+    <div id="submitButton"class="submit-top">
+    </div>
+  </div>
+  <div id="topbar" class="top-left">
+  </div>
+  <div id="info">
+    <div>Boubble chart:<br>
+    The radius of the circles represent the amount of unique words a character has said.
+    </div>
+  <div id="bubbles" class="bub-right">
+  </div>
+  <div id="root3title" class = "root3-title-top">Sankey Graph:<br>
+    To the left are the character names.
+    To the right are each characters top 6 most used words in the show.
+    The thickness of the colored lines represent the ammount of
+    times the word has been spoken relative to the 5 other words.
+  </div>
+  <div id="root3" class="sank-bot">
+  </div>
+</div>
+
+  <script src="./lib/jquery.min.js"></script>
+  <script src="./lib/d3.min.js"></script>
+  <script src="./lib/sankey.js"></script>
+
+  <script src="./js/topbar.js"></script>
+  <script src="./js/bubbles.js"></script>
+  <script src="./js/showsankey.js"></script>
+  <script src="./js/calculate.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
