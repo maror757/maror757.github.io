@@ -8,6 +8,7 @@ createModal("myModal6", "myImg6", "img6", "caption6", "description6", "kbynapp")
 createModal("myModal7", "myImg7", "myVid7", "caption7", "description7", "helicopter");
 createModal("myModal8", "myImg8", "img8", "caption8", "description8", "terragen");
 createModal("myModal9", "myImg9", "img9", "caption9", "description9", "dota2");
+createModal("myModal10", "myImg10", "myVid10", "caption10", "description10", "drstrange");
 
 function createModal(modalName, imgName, modalImg, capt, descr, projectName)
 {
@@ -17,7 +18,7 @@ function createModal(modalName, imgName, modalImg, capt, descr, projectName)
   var modalImg = document.getElementById(modalImg);
   var captionText = document.getElementById(capt);
   var descriptionText = document.getElementById(descr);
-  if(projectName === "tui" || projectName === "helicopter")
+  if(projectName === "tui" || projectName === "helicopter" || projectName == "drstrange")//If its a video project
   {
     img.onclick = function() {
       modal.style.display = "block";
@@ -111,4 +112,9 @@ function getDescription(projectName)
       + " inside the game that delivers items to a player. The courier was created in 3D using 3dsMax. Every courier in the game"
       + " needs 5 animations, one for ground walking, ground idle, flying, flying idle and dying. These animations were created"
       + " using Maya and the textures for the model was designed in photoshop.";
+    else if(projectName === "drstrange")
+      return "Marvels popular character Dr.Strange can perform various forms of magic, one of his spells is creating a portal"
+      + " which instantly teleports anyone that travels through it to a designated location."
+      + " The portal was created using a Python script in Autodesk-Maya, utilizing their built in particle system."
+      + " The compositing and some special effects where added post production using Premiere Pro.";
 }

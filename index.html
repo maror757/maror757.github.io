@@ -5,36 +5,84 @@
 <div class="main">
 <link rel="stylesheet" type="text/css" href="style.css">
 
-<h1>Martin Orava</h1>
+<h1> Portfolio </h1>
+<h1 class = "h1-name"> Martin Orava </h1>
 <hr>
-
-<h3>I'm a 5th year M.Sc. in Media Technology & Engineering student at Linköping university and this is my portfolio.</h3>
+<h2>I'm a 5th year M.Sc. in Media Technology & Engineering student at Linköping university and here is some of my work.</h2>
+</div>
 
 <!-- Portfolio Gallery Grid -->
-  <div class="content">
-    <!-- Trigger the Modal -->
-    <img class="myImg" id="myImg1" src="imgs/raytracer.png" alt="Monte-Carlo raytracer" style="width:100%">
-    <!-- The Modal -->
-    <div id="myModal1" class="modal">
-      <!-- The Close Button -->
-      <span class="close">&times;</span>
-      <!-- Modal Content (The Image) -->
-      <img class="modal-content" id="img1">
-      <!-- Modal Caption (Image Text) -->
-      <div class= "caption" id="caption1"></div>
-      <div class= "description" id="description1"> </div>
+<div class = "row">
+  <div class = "top-column">
+    <div class="content">
+      <!-- Trigger the Modal -->
+      <img class="myImg" id="myImg1" src="imgs/raytracer.png" alt="Monte-Carlo raytracer" style="width:100%">
+      <!-- The Modal -->
+      <div id="myModal1" class="modal">
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img1">
+        <!-- Modal Caption (Image Text) -->
+        <div class= "caption" id="caption1"></div>
+        <div class= "description" id="description1"> </div>
+      </div>
+      <div class = "top-column-description">
+        <div class = "top-column-description-left">
+          <h3>Monte-Carlo raytracer</h3>
+          <p>C++ | glm. </br>  <a target="_blank" rel="noopener noreferrer" href="https://github.com/maror757/MonteCarlo-raytracer">Github Link</a> </p>
+        </div>
+        <div class = "top-column-description-right">
+          <img src="imgs/logos/cpp.png" alt="logo" style="width:100%;max-width:60px">
+          <img src="imgs/logos/glm.png" alt="logo" style="width:100%;max-width:60px">
+        </div>
+      </div>
     </div>
-
-    <h3>Monte-Carlo raytracer</h3>
-    <p>C++, glm. </br>  <a target="_blank" rel="noopener noreferrer" href="https://github.com/maror757/MonteCarlo-raytracer">Github Link</a> </p>
   </div>
+
+  <div class = "top-column">
+    <div class="content">
+      <!-- Trigger the Modal -->
+      <img class="myImg" id="myImg10" src="imgs/drstrange.PNG" alt="Dr.Strange Portal" style="width:100%">
+      <!-- The Modal -->
+      <div id="myModal10" class="modal">
+
+        <iframe class="myVid" width="560" height="315" src="https://www.youtube.com/embed/RVCBu-uiue8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="myVid10">
+        <!-- Modal Caption (Image Text) -->
+        <div class= "caption" id="caption10"></div>
+        <div class= "description" id="description10"> </div>
+      </div>
+      <div class = "top-column-description">
+        <div class = "top-column-description-left">
+          <h3>Dr.Strange Portal Effect</h3>
+          <p>Python | Maya | Premiere Pro </br>  <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=RVCBu-uiue8">Youtube Link</a> </p>
+        </div>
+        <div class = "top-column-description-right">
+          <img src="imgs/logos/python.png" alt="logo" style="width:100%;max-width:60px">
+          <img src="imgs/logos/maya.png" alt="logo" style="width:100%;max-width:60px">
+          <img src="imgs/logos/pp.png" alt="logo" style="width:100%;max-width:60px">
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
 
 <div class="row">
   <div class="column">
     <div class="content">
-
+      <div class = "logos-bar">
+          <img class = "logo" src="imgs/logos/TensorFlow.PNG" alt="logo" style="max-width:60%">
+          <img class = "logo" src="imgs/logos/JavaScript.PNG" alt="logo" style="max-width:18%">
+          <img class = "logo" src="imgs/logos/p5.PNG" alt="logo" style="max-width:18%">
+      </div>
     <!-- Trigger the Modal -->
-    <img class="myImg" id="myImg2" src="imgs/AI_neural_network.PNG" alt="Recognize Handwritten Digits Using Neural Network" style="width:100%;max-width:300px">
+    <img class="myImg" id="myImg2" src="imgs/AI_neural_network.PNG" alt="Recognize Handwritten Letters Using Neural Network" style="width:100%;max-width:300px">
     <!-- The Modal -->
     <div id="myModal2" class="modal">
       <!-- The Close Button -->
@@ -47,7 +95,7 @@
     </div>
       <h3>Neural Network</h3>
       <p>
-        Javascript, Tensorflow, p5, MNIST Database </br>
+         TensorFlow | JavaScript | p5 | MNIST Database </br>
         <a target="_blank" rel="noopener noreferrer" href="neural_network/dist/index.html">Project link</a> </br>
         <a target="_blank" rel="noopener noreferrer" href="https://github.com/maror757/Neural-Network-Character-Recognition">Github Link</a>
       </p>
@@ -55,6 +103,10 @@
   </div>
   <div class="column">
     <div class="content">
+      <div class = "logos-bar">
+          <img class = "logo" src="imgs/logos/mern.PNG" alt="logo"style="width:39%">
+          <img class = "logo" src="imgs/logos/axios.PNG" alt="logo" style="width:59%">
+      </div>
       <!-- Trigger the Modal -->
       <img class="myImg" id="myImg3" src="imgs/pcbooker.PNG" alt="Website For An Internet Café Using MERN + Redux" style="width:100%;max-width:300px">
       <!-- The Modal -->
@@ -68,14 +120,17 @@
         <div class= "description" id="description3"> </div>
       </div>
         <h3>Internet Café website</h3>
-        <p>MERN + Redux, mongoose and axios</br>
+        <p>MERN + Redux | Mongoose | Axios</br>
         <a target="_blank" rel="noopener noreferrer" href="https://gitlab.ida.liu.se/maror757/TDDD27_2018_PCbooker.git">Gitlab Link</a>
         </p>
     </div>
   </div>
   <div class="column">
     <div class="content">
-
+      <div class = "logos-bar">
+          <img class = "logo" src="imgs/logos/cinder.PNG" alt="logo" style="max-width:49%">
+          <img class = "logo" src="imgs/logos/opencv.PNG" alt="logo" style="max-width:49%">
+      </div>
       <!-- Trigger the Modal -->
       <img class="myImg" id="myImg4" src="imgs/tui.PNG" alt="TUI - Media Navigation With Physical Cards On a Visualization Table" style="width:100%;max-width:300px">
       <!-- The Modal -->
@@ -90,7 +145,7 @@
         <div class= "description" id="description4"> </div>
       </div>
       <h3>Bachelor's project - Media Navigation With Physical Cards On a Visualization Table</h3>
-      <p>Cinder, OpenCV3, Aruco, Quicktime, PoScene</br>
+      <p>Cinder | OpenCV3 | ArUco | QuickTime | poScene</br>
       <a target="_blank" rel="noopener noreferrer" href="https://github.com/maror757/Microcosmos">Github Link</a>
       </p>
     </div>
@@ -98,6 +153,11 @@
 
   <div class="column">
   <div class="content">
+    <div class = "logos-bar">
+        <img class = "logo" src="imgs/logos/JavaScript.PNG" alt="logo" style="max-width:25%">
+        <img class = "logo" src="imgs/logos/CSS.PNG" alt="logo" style="max-width:25%">
+        <img class = "logo" src="imgs/logos/HTML.PNG" alt="logo" style="max-width:25%">
+    </div>
     <!-- Trigger the Modal -->
     <img class="myImg" id="myImg5" src="imgs/bubblegraph.PNG" alt="Visualizing a Large Mutlivariate Dataset" style="width:100%;max-width:300px">
     <!-- The Modal -->
@@ -111,7 +171,7 @@
       <div class= "description" id="description5"> </div>
     </div>
     <h3>Visualizing a Large Mutlivariate Dataset</h3>
-    <p>Javascript, css, HTML, d3, jQuery</p>
+    <p>JavaScript | CSS | HTML | d3 | jQuery</p>
     <a target="_blank" rel="noopener noreferrer" href="infoviz/index.html">Project link (doesnt work on chrome)</a> </br>
     <a target="_blank" rel="noopener noreferrer" href="https://github.com/maror757/Information-Visualization">Github Link</a>
   </div>
@@ -134,7 +194,7 @@
         <div class= "description" id="description6"> </div>
       </div>
       <h3>Mobile-App Prototype</h3>
-      <p>UX, InVision, Photoshop </p>
+      <p>UX | InVision | Photoshop </p>
       <a target="_blank" rel="noopener noreferrer" href="kbyn_app.html">Project link</a> </br>
     </div>
   </div>
@@ -156,7 +216,7 @@
         <div class= "description" id="description7"> </div>
       </div>
       <h3>Helicopter Simulation</h3>
-      <p>Unreal Engine 4, 3dsMax, Matlab </p>
+      <p>Unreal Engine 4 | 3dsMax | Matlab </p>
     </div>
   </div>
 
@@ -196,7 +256,7 @@
         <div class= "description" id="description9"> </div>
       </div>
       <h3>Dota 2 Courier</h3>
-      <p>3dsMax, Maya, Photoshop </p>
+      <p>3dsMax | Maya | Photoshop </p>
     </div>
   </div>
 </div>

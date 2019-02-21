@@ -3,8 +3,9 @@
 }
 
 body {
-    background-color: #f1f1f1;
-    padding: 20px;
+    /*background-color: #f1f1f1;*/
+    background-color: #333439;
+    padding: 60px;
     font-family: Arial;
 }
 
@@ -17,6 +18,15 @@ body {
 h1 {
     font-size: 50px;
     word-break: break-all;
+    color: orange;
+}
+.h1-name{
+  font-size: 20px;
+  color: white;
+}
+h2{
+  font-size: 15px;
+  color: white;
 }
 
 .row {
@@ -25,7 +35,7 @@ h1 {
 
 /* Add padding BETWEEN each column (if you want) */
 .row,
-.row > .column {
+.row> .column  {
     padding: 8px;
 }
 
@@ -33,6 +43,12 @@ h1 {
 .column {
     float: left;
     width: 25%;
+}
+/* Create four equal columns that floats next to each other */
+.top-column {
+    float: left;
+    width: 50%;
+    padding: 8px;
 }
 
 /* Clear floats after rows */
@@ -44,9 +60,41 @@ h1 {
 
 /* Content */
 .content {
-    background-color: white;
-    padding: 10px;
+    /*background-color: white;*/
+    background-color: #EAEAEA;
+    padding: 5px;
+    border-radius: 8px;
+    overflow: auto;
 }
+.top-column-description-left{
+  float: left;
+}
+.top-column-description-right{
+  padding-top: 15px;
+  float: right;
+}
+.top-column-description{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.logos-bar{
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+.logo
+{
+  max-height: 60px;
+  height: auto;
+  width: auto;
+}
+a {
+  color: #e68a00;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
@@ -70,6 +118,7 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    max-height: 440px;
 }
 
 .myImg:hover {opacity: 0.7;}
