@@ -9,6 +9,7 @@ createModal("myModal7", "myImg7", "myVid7", "caption7", "description7", "helicop
 createModal("myModal8", "myImg8", "img8", "caption8", "description8", "terragen");
 createModal("myModal9", "myImg9", "img9", "caption9", "description9", "dota2");
 createModal("myModal10", "myImg10", "myVid10", "caption10", "description10", "drstrange");
+createModal("myModal11", "myImg11", "img11", "caption11", "description11", "syntheticeyes");
 
 function createModal(modalName, imgName, modalImg, capt, descr, projectName)
 {
@@ -117,4 +118,6 @@ function getDescription(projectName)
       + " which instantly teleports anyone that travels through it to a designated location."
       + " The portal was created using a Python script in Autodesk-Maya, utilizing their built in particle system."
       + " The compositing and some special effects where added post production using Premiere Pro.";
+	else if(projectName === "syntheticeyes")
+      return "--description coming soon--";
 }

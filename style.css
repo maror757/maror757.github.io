@@ -47,7 +47,7 @@ h2{
 /* Create four equal columns that floats next to each other */
 .top-column {
     float: left;
-    width: 50%;
+    width: 33%;
     padding: 8px;
 }
 
