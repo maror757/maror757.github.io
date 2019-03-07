@@ -119,5 +119,7 @@ function getDescription(projectName)
       + " The portal was created using a Python script in Autodesk-Maya, utilizing their built in particle system."
       + " The compositing and some special effects where added post production using Premiere Pro.";
 	else if(projectName === "syntheticeyes")
-      return "--description coming soon--";
+      return "Currently working with the R&D department in optronics at Tobii - Stockholm during the spring. The project"
+      + " is to design and implement a synthetic 3D-model of a human eye, using raytracing and 3D software, to test and"
+      + " evaluate current Eye tracking systems.";
 }
